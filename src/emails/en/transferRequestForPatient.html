@@ -1,0 +1,25 @@
+<h3 style="font-size:30px; margin-top:0; text-align: center; color: #000; font-weight: normal">A new transfer has been requested
+  <p style="font-size:20px;color:#000;margin:12px auto;padding: 0 15px;text-align: center; font-weight: 200; ">
+    {{ hospitalName }}
+    <!--потрібно виводити хоспітал, на який відправлено запит-->
+  </p>
+  <p style="font-size:16px;color:#7A8091;margin:12px auto;padding: 0 15px;text-align: center; font-weight: 200; ">
+    {{ hospitalAddress }}
+    <!--потрібно виводити адресу відповідного хоспіталю-->
+  </p>
+</h3>
+
+<div style="display: flex; justify-content: space-around;background: #fff; padding: 17px 16px;margin: 1.5em 0 2.5em;">
+  <p  style="display: inline-block;color:#7A8091; font-size: 13px;">Patient name:
+    <span style="color:#000;">
+            {{ patientName }}
+      <!--виводити ім'я пацієнта-->
+          </span>
+  </p>
+  <p style="display: inline-block;color:#7A8091; font-size: 13px; margin-left: 5px"> Patient birthday:
+    <span style="color:#000; margin-left: 5px">
+            {{ patientBirthday }}
+      <!--виводити дату народження пацієнта-->
+          </span>
+  </p>
+</div>

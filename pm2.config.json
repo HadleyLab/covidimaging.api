@@ -1,0 +1,16 @@
+{
+  "apps" : [
+    {
+      "name"        : "covidimaging-api",
+      "script"      : "./dist/index.js",
+      "env": {
+        "NODE_ENV": "dev",
+        "PORT": "8091"
+      }
+    },
+    {
+      "name"        : "covidimaging-cron",
+      "script"      :  "./dist/cron/cron.js"
+    }
+  ]
+}

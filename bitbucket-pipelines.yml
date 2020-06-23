@@ -1,0 +1,23 @@
+image: node:10.8.0
+pipelines:
+  custom:
+    build-stage:
+      - step:
+          script:
+            - npm i
+            - npm run build:stage
+            - rm -rf src
+            - tar czf deploy.stage.tar.gz ./*
+            - curl -X POST "https://${BB_AUTH_STRING}@api.bitbucket.org/2.0/repositories/${BITBUCKET_REPO_OWNER}/${BITBUCKET_REPO_SLUG}/downloads" --form files=@"deploy.stage.tar.gz"
+          artifacts:
+            - deploy.stage.tar.gz
+    build-prod:
+      - step:
+          script:
+            - npm i
+            - npm run build:prod
+            - rm -rf src
+            - tar czf deploy.prod.tar.gz ./*
+            - curl -X POST "https://${BB_AUTH_STRING}@api.bitbucket.org/2.0/repositories/${BITBUCKET_REPO_OWNER}/${BITBUCKET_REPO_SLUG}/downloads" --form files=@"deploy.prod.tar.gz"
+          artifacts:
+            - deploy.prod.tar.gz

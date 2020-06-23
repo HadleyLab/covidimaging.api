@@ -1,1 +1,0 @@
-# covidimaging.api

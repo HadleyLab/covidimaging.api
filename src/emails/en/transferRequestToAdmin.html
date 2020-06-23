@@ -1,0 +1,31 @@
+<h3 style="font-size:30px; margin-top:0; text-align: center; color: #000; font-weight: normal">A new transfer has been requested
+  <p style="font-size:20px;color:#000;margin:12px auto;padding: 0 15px;text-align: center; font-weight: 200; ">
+    {{ hospitalName }}
+    <!--потрібно виводити хоспітал, на який відправлено запит-->
+  </p>
+  <p style="font-size:16px;color:#7A8091;margin:12px auto;padding: 0 15px;text-align: center; font-weight: 200; ">
+    {{ hospitalAddress }}
+    <!--потрібно виводити адресу відповідного хоспіталю-->
+  </p>
+</h3>
+
+<div style="display: flex; justify-content: space-around;background: #fff; padding: 17px 16px;margin: 1.5em 0 2.5em;">
+  <p  style="display: inline-block;color:#7A8091; font-size: 13px;">Transaction ID:
+    <span style="color:#000;">
+            {{ transferId }}
+      <!--виводити ім'я пацієнта-->
+          </span>
+  </p>
+</div>
+<p style="font-size:18px;color:#000;margin:12px auto;padding: 0 15px;text-align: center; font-weight: 200;">
+  Please click the button bellow<br/>
+  to change hospital details and enter a correct sender ID
+</p>
+
+<p><a href="{{ urlToEditTransfer }}" style="text-decoration:none;text-align: center;margin: 3em auto;padding: 17px 0 19px;font-weight: 200;border-radius: 30px;text-transform: none;color: #fff;font-size: 1em;border: none;outline: none;max-width: 280px;display: block; background-color: #FAA900;">Transfers.</a></p>
+
+<p style="font-size:14px;margin:12px auto 5px;padding: 0 15px;text-align: center; color:#7A8091;">If the button doesn't work, please try clicking on this link</p>
+<a href="{{ urlToEditTransfer }}" style="text-decoration:none;text-align: center;margin: 12px auto 5px; font-size:14px; color:#16A7FF;font-weight: 400;">
+  {{ urlToEditTransfer }}
+  <!--виводити пряме посилання на сторінку хоспіталю-->
+</a>

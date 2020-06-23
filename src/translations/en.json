@@ -1,0 +1,15 @@
+{
+  "registration": "CovidImaging email confirmation",
+  "resetPassword": "CovidImaging password reset",
+
+  "title.Email.sendingEmployeeAfterRegistration.part.1" : " a new transfer ",
+  "title.Email.sendingEmployeeAfterRegistration.part.2" : " is asked.",
+  "title.Subject.Email.sendingEmployeeAfterRegistration.part.1" : "New transfer request: ",
+
+  "titleSubject.Email.transferRequestForPatient" : " New transfer request from CovidImaging: ",
+  "titleSubject.Email.transferRequestToAdmin" : " New transfer request: ",
+  "titleSubject.Email.emailUserAfterSuccessfulModeration" : "Sign the agreement to start image transferring",
+  "titleSubject.Email.sendEmailForModerationHospital" : "New hospital to moderate: ",
+
+  "":""
+}
