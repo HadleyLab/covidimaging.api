@@ -71,7 +71,7 @@
     "node-cron": "^1.2.1",
     "node-ses": "^2.2.1",
     "nodejs-fs-utils": "^1.1.0",
-    "nodemailer": "^4.6.8",
+    "nodemailer": "^6.4.16",
     "npm": "^6.9.0",
     "passport": "^0.4.0",
     "path": "^0.12.7",
