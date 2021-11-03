@@ -89,7 +89,7 @@
     "tracer": "^0.8.11",
     "unzip": "^0.1.11",
     "util": "^0.10.3",
-    "validator": "^9.1.1",
+    "validator": "^13.7.0",
     "xml2js": "^0.4.19",
     "graceful-fs": "^4.2.3"
   },
