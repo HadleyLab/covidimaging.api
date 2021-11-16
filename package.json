@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "async-request": "^1.2.0",
-    "aws-sdk": "^2.479.0",
+    "aws-sdk": "^2.814.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-node6": "^11.0.0",
     "bcryptjs": "^2.4.3",
